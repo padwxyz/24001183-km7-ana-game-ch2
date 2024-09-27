@@ -1,0 +1,350 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Helvetica", serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --Primary-DarkBlue-01: #cfd4ed;
+  --Primary-DarkBlue-02: #aeb7e1;
+  --Primary-DarkBlue-03: #5e70c4;
+  --Primary-DarkBlue-04: #0d28a6;
+  --Primary-DarkBlue-05: #091b6f;
+
+  --Primary-LimeGreen-01: #def1df;
+  --Primary-LimeGreen-02: #c9e7ca;
+  --Primary-LimeGreen-03: #92d094;
+  --Primary-LimeGreen-04: #5cb85f;
+  --Primary-LimeGreen-05: #3d7b3f;
+
+  --Neutral-01: #ffffff;
+  --Neutral-02: #d0d0d0;
+  --Neutral-03: #8a8a8a;
+  --Neutral-04: #3c3c3c;
+  --Neutral-05: #151515;
+
+  --Alert-Danger: #fa2c5a;
+  --Alert-Warning: #f9cc00;
+  --Alert-Success: #73ca5c;
+
+  --Font-Heading-01: 36px;
+  --Font-Heading-02: 24px;
+  --Font-Heading-03: 20px;
+
+  --Font-Title-01: 18px;
+  --Font-Title-02: 16px;
+
+  --Font-Body-01: 14px;
+  --Font-Body-02: 12px;
+  --Font-Body-03: 10px;
+
+  --Shadow-Low: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  --Shadow-High: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: var(--Font-Heading-01);
+}
+
+h2 {
+  font-size: var(--Font-Heading-02);
+}
+
+h3 {
+  font-size: var(--Font-Title-02);
+}
+
+p {
+  font-size: var(--Font-Body-01);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+label {
+  font-size: var(--Font-Body-01);
+}
+
+option {
+  font-size: var(--Font-Body-01);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./public/assets/font/halvetica/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background: var(--Primary-LimeGreen-04);
+  color: var(--Neutral-01);
+}
+
+.btn:hover {
+  border: 2px solid var(--Primary-LimeGreen-04);
+  color: var(--Primary-LimeGreen-04);
+}
+
+.btn-cars {
+  max-width: 285px;
+  height: 48px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  background: var(--Primary-LimeGreen-04);
+  color: var(--Neutral-01);
+}
+
+.btn-cars:hover {
+  background: var(--Neutral-01);
+  border: 2px solid var(--Primary-LimeGreen-04);
+  color: var(--Primary-LimeGreen-04);
+}
+
+/* navbar */
+#Navbar {
+  z-index: 3;
+  min-height: 75px;
+  max-width: 100vw;
+}
+
+.navbar-brand {
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+  background: var(--Primary-DarkBlue-04);
+}
+
+.nav-link {
+  margin-right: 32px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--Primary-LimeGreen-04);
+}
+
+.offcanvas {
+  max-width: 180px;
+  box-shadow: var(--Shadow-Low);
+}
+
+/* hero section */
+.hero {
+  margin-bottom: 100px;
+  margin-top: 75px;
+  background: #f1f3ff;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-rentcar {
+  margin-top: 75px;
+  background: #f1f3ff;
+  max-width: 100%;
+  height: auto;
+}
+
+/* service section */
+#Service {
+  margin-bottom: 100px;
+}
+
+.img-service {
+  width: auto;
+  height: 428px;
+}
+
+/* why us section */
+#Whyus {
+  margin-bottom: 100px;
+}
+
+.whyus-tagline {
+  margin-bottom: 40px;
+}
+
+.whyus-card {
+  width: auto;
+  height: 196px;
+  
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-02);
+}
+
+/* testimonial section */
+#Testimonial {
+  margin-bottom: 100px;
+}
+
+.img-carousel {
+  min-height: 60px;
+  max-width: 60px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  margin-top: 40px;
+}
+
+.carousel-item {
+  max-width: 600px;
+}
+
+.card {
+  background-color: #f1f3ff;
+  max-width: 619px;
+  min-height: 270px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+  padding-right: 32px;
+  padding-left: 32px;
+  border-radius: 8px;
+  box-shadow: var(--Shadow-Low);
+}
+
+.carousel-btn {
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-control-next {
+  right: 530px;
+}
+
+.carousel-control-prev {
+  left: 530px;
+}
+
+/* rent section */
+#Rent {
+  margin-bottom: 100px;
+}
+
+.container-rent {
+  min-height: 326px;
+  border-radius: 13px;
+  background: var(--Primary-DarkBlue-04);
+}
+
+.rent-tagline {
+  padding: 64px;
+}
+
+.rent-tagline p {
+  margin-bottom: 52px;
+}
+
+/* faq section */
+#Faq {
+  margin-bottom: 100px;
+}
+
+.accordion-item {
+  max-width: 668px;
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
+}
+
+/* footer section */
+#Footer {
+  padding-bottom: 100px;
+}
+
+/* rentcar page */
+#Search {
+  margin-top: -50px;
+  z-index: 3;
+}
+
+.search-card {
+  max-width: 1047px;
+  height: 106px;
+  border-radius: 8px;
+  background: var(--Neutral-01);
+  box-shadow: var(--Shadow-High);
+}
+
+.form-select:hover {
+  border: 1px solid var(--Primary-LimeGreen-04);
+  border-radius: 2px;
+}
+
+.form-select option:hover, .form-select option:checked {
+  background: var(--Primary-LimeGreen-02);
+  color: var(--Primary-LimeGreen-04);
+}
+
+#Cars {
+  margin-bottom: 108px;
+}
+
+.cars-card {
+  max-width: 333px;
+  height: auto;
+  padding: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background: var(--Neutral-01);
+  box-shadow: var(--Shadow-High);
+}
+
+/* responsicve */
+/* mobile view */
+@media (max-width: 500px) {
+  /* hero section */
+  #Hero {
+    min-height: 657px;
+  }
+
+  .img-hero {
+    max-width: 437px;
+    min-height: 122px;
+    right: 0;
+  }
+
+  /* service section */
+  .img-service {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  /* footer section */
+  .margin-footer {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+      display: none !important;
+    }
+  
+    .navbar-toggler {
+      display: inline-block;
+    }
+  }
